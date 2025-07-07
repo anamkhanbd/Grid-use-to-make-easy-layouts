@@ -150,3 +150,22 @@
         grid-template-columns: 1fr;
       }
     }
+
+    @media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* শুধু ১টা কলাম */
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6,
+  .box7,
+  .box8,
+  .box9 {
+    grid-column: span 1 !important;
+    grid-row: auto !important;
+  }
+}
