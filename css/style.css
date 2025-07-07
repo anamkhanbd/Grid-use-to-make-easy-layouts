@@ -1,0 +1,152 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: #f7f7f7;
+      padding: 20px;
+    }
+.main {
+    width: 100%;
+    /* margin:50px; */
+    padding: 70px;
+}
+/*css for grid*/
+.grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .box {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      font-size: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    .box img {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Color-coded for matching layout */
+    .box1 { background: #ffeedd; }
+    .box2 { background: #a78bfa; color: white; }
+    .box3 { background: #e9d5ff; }
+    .box4 { background: #fdba74; }
+    .box5 { background: #fff; }
+    .box6 { background: #fcd34d; }
+    .box7 { background: #fff; }
+    .box8 { background: #c084fc; color: white; }
+    .box9 { background: #fff; }
+
+    /* Grid positions (just like the image layout) */
+    .box1 {
+      grid-column: span 1;
+      grid-row: span 2;
+    }
+
+    .box2 {
+      grid-column: span 2;
+    }
+
+    .box3 {
+      grid-column: span 1;
+      grid-row: span 2;
+    }
+
+    .box4 {
+      grid-column: span 1;
+    }
+
+    .box5 {
+      grid-column: span 1;
+    }
+
+    .box6 {
+      grid-column: span 1;
+    }
+
+    .box7 {
+      grid-column: span 1;
+    }
+
+    .box8 {
+      grid-column: span 2;
+    }
+
+    .box9 {
+      grid-column: span 1;
+    }
+
+
+/* text styles */
+ .quiker{
+    color: #a78bfa;
+    font-weight: bold;
+ }
+.box2 span.xxx {
+        color: #fcd34d;
+}
+.box2{
+    text-align: center;
+}
+.box2 h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.box3{
+    display: block;
+    overflow: hidden;
+}
+.box3 h2{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.box3 p {
+    font-size: 1rem;
+    color: #000;
+    padding: 10px 0;
+    line-height: 1.5;
+}
+
+
+ /* image styles */
+ .box1 img {
+    width: 150px;
+    /* margin-left: auto; */
+    cursor: pointer;
+ }
+.box2 img {
+    width: 100px;
+    align-items: center;
+    margin: 0 auto;
+    display: block;
+    }
+.box3 img {
+    width: 400px;
+    height: auto;
+    margin-right: -150px;
+}
+
+
+
+
+    /* Responsive for smaller screens */
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
